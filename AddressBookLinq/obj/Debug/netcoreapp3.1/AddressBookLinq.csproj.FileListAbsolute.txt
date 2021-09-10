@@ -1,0 +1,13 @@
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\AddressBookLinq.exe
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\AddressBookLinq.deps.json
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\AddressBookLinq.runtimeconfig.json
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\AddressBookLinq.runtimeconfig.dev.json
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\AddressBookLinq.dll
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\AddressBookLinq.pdb
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.AssemblyInfo.cs
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.dll
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.pdb
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.genruntimeconfig.cache
