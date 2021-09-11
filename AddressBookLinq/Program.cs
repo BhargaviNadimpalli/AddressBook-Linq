@@ -9,7 +9,7 @@ namespace AddressBookLinq
             Console.WriteLine("Welcome to address book using linq progrmas");
 
             AddressBook address = new AddressBook();
-            address.AddressBookDataTable();
+            address.DisplayDataTable();
         }
     }
 }
