@@ -11,3 +11,7 @@ C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1
 C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.dll
 C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.pdb
 C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.genruntimeconfig.cache
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\Bogus.dll
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\bin\Debug\netcoreapp3.1\System.IO.Packaging.dll
+C:\Users\HP\source\repos\AddressBookLinq\AddressBookLinq\obj\Debug\netcoreapp3.1\AddressBookLinq.csproj.CopyComplete

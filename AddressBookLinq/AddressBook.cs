@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Text;
 
 namespace AddressBookLinq
@@ -26,14 +27,27 @@ namespace AddressBookLinq
         }
             public void InsertIntoDataTable(AddressBookData Person)
             {
-                table.Rows.Add("Bhagi", "latha", "ap", "ap", "ap", 966080, "122345098987", "bhagi@gmail.com");
-            table.Rows.Add("Manu", "y", "ap", "mp", "ma", 345678, "189865345", "manu@gmail.com");
-            table.Rows.Add("Tanu", "t", "Hyd", "ap", "ppq", 456788, "12319862744", "tanu@gmail.com");
-            table.Rows.Add("Prethi", "tbms", "tyvb", "uaa", "khd", 987654, "9283459623", "preethi@gmail.com");
-            table.Rows.Add("Kumar", "s", "mu", "tum", "kncs", 798833, "527652345", "kumar@gmail.com");
-
+                table.Rows.Add("Bhagi", "latha", "ap", "ap", "ap", 1223098987, 966080, "bhagi@gmail.com");
+            table.Rows.Add("Manu", "y", "ap", "mp", "ma", 189865345, 345678, "manu@gmail.com");
+            table.Rows.Add("Tanu", "t", "Hyd", "ap", "ppq", 1219862744, 456788, "tanu@gmail.com");
+            table.Rows.Add("Prethi", "tbms", "tyvb", "uaa", "khd", 983459623, 987654, "preethi@gmail.com");
+            table.Rows.Add("Kumar", "s", "mu", "tum", "kncs", 527652345, 798833, "kumar@gmail.com");
+            }
+        public void ModifyDataTableUsingName(string name, AddressBookData Person)
+        {
+            string output = string.Empty;
+            //insert into table
+            InsertIntoDataTable(Person);
+            var res = (from person in dataTable.AsEnumerable() where person.Field<string>("FirstName").Equals(name) select person).LastOrDefault();//returns last element satisfies the condition or default value
+            if (res != null)
+            {
+                res["LastName"] = "NN";
+                //display after its modified
+                Console.WriteLine("After Modification");
+                DisplayDataTable();
+                output = "success";
+            }
             
-
         }
 
         public void DisplayDataTable()
