@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8eL/9p5IzEsBo1tN6UjQx5NqgFHvSv24GABFlDMAShyBTdyoTAWDkgXbLgdPdqWt3o6P6ZW4/IdXlIR/F5EeJA==",
+  "dgSpecHash": "xSGyH8RpOnfWUnTZUL8GYWEDrPAGkViPrw4X+RiSUckfYDv/9GXq3w8Kki9VF49F9n7EYA80WmXKR2EOEu5g8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\source\\repos\\AddressBookLinq\\AddressBookLinq\\AddressBookLinq.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\bogus\\33.1.1\\bogus.33.1.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\documentformat.openxml\\2.13.1\\documentformat.openxml.2.13.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
