@@ -91,6 +91,14 @@ namespace AddressBookLinq
                            .OrderBy(x => x.Field<string>("FirstName"));
             DisplayDataTable(contacts.CopyToDataTable());
         }
+        public void AddPerson(DataTable table)
+        {
+            var contacts = table.Rows.Cast<DataRow>()
+                            .Where(x => x["FirstName"].Equals("Rahul"));
+
+            Console.WriteLine("\nAdded New Contact in Both Family And Friends");
+            DisplayDataTable(contacts.CopyToDataTable());
+        }
     }
 
 }
