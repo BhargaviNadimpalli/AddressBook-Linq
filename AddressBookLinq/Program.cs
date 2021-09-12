@@ -7,7 +7,7 @@ namespace AddressBookLinq
 {
     class Program
     {
-        public static AddressBookData Person { get; private set; }
+        
 
         static void Main(string[] args)
         {
@@ -17,8 +17,8 @@ namespace AddressBookLinq
 
             DataTable dataTable = addressBook.AddAddressBookData();
            
-            addressBook.DeleteContact(dataTable);
-            
+            //addressBook.DeleteContact(dataTable);
+            addressBook.RetrieveByCityOrState(dataTable);
         }
     }
 }

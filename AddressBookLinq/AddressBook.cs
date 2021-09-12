@@ -61,6 +61,21 @@ namespace AddressBookLinq
                 Console.WriteLine("Contact is Not in the List");
             DisplayDataTable(table);
         }
+        public void RetrieveByCityOrState(DataTable table)
+        {
+            var contacts = table.AsEnumerable().Where(x => x.Field<string>("State") == "GUJ");
+            int count = contacts.Count();
+            if (count > 0)
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    Console.WriteLine($"{row["FirstName"]} | { row["LastName"]} | {row["Address"]} | {row["City"]} | {row["State"]} | {row["ZipCode"]} | {row["PhoneNumber"]} | {row["Email"]}\n");
+
+                }
+            }
+            else
+                Console.WriteLine("City or State is Not in the List");
+        }
     }
 
 }
