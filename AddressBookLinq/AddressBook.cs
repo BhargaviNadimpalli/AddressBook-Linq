@@ -63,7 +63,7 @@ namespace AddressBookLinq
         }
         public void RetrieveByCityOrState(DataTable table)
         {
-            var contacts = table.AsEnumerable().Where(x => x.Field<string>("State") == "GUJ");
+            var contacts = table.AsEnumerable().Where(x => x.Field<string>("State") == "ap");
             int count = contacts.Count();
             if (count > 0)
             {
