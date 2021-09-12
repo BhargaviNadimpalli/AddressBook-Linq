@@ -18,7 +18,8 @@ namespace AddressBookLinq
             DataTable dataTable = addressBook.AddAddressBookData();
            
             //addressBook.DeleteContact(dataTable);
-            addressBook.RetrieveByCityOrState(dataTable);
+            //addressBook.RetrieveByCityOrState(dataTable);
+            addressBook.CountByCityOrState(dataTable);
         }
     }
 }

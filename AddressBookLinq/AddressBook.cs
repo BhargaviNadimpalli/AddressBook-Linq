@@ -63,18 +63,27 @@ namespace AddressBookLinq
         }
         public void RetrieveByCityOrState(DataTable table)
         {
-            var contacts = table.AsEnumerable().Where(x => x.Field<string>("State") == "GUJ");
+            var contacts = table.AsEnumerable().Where(x => x.Field<string>("State") == "ap");
             int count = contacts.Count();
             if (count > 0)
             {
                 foreach (DataRow row in table.Rows)
                 {
-                    Console.WriteLine($"{row["FirstName"]} | { row["LastName"]} | {row["Address"]} | {row["City"]} | {row["State"]} | {row["ZipCode"]} | {row["PhoneNumber"]} | {row["Email"]}\n");
+                    Console.WriteLine($"{row["FirstName"]} | { row["LastName"]} | {row["Address"]} | " +
+                        $"{row["City"]} | {row["State"]} | {row["ZipCode"]} | {row["PhoneNumber"]} | " +
+                        $"{row["Email"]}\n");
 
                 }
             }
             else
                 Console.WriteLine("City or State is Not in the List");
+        }
+        public void CountByCityOrState(DataTable table)
+        {
+            var contacts = table.Rows.Cast<DataRow>().GroupBy(x => x["State"].Equals("ap")
+            || x["City"].Equals("ap")).Count();
+
+            Console.WriteLine("Size : {0} ", contacts);
         }
     }
 
