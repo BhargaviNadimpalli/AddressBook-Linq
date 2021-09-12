@@ -47,7 +47,7 @@ namespace AddressBookLinq
         }
         public void DeleteContact(DataTable table)
         {
-            var contacts = table.AsEnumerable().Where(x => x.Field<string>("FirstName") == "Jasprit");
+            var contacts = table.AsEnumerable().Where(x => x.Field<string>("FirstName") == "Bhagi");
             int count = contacts.Count();
             if (count > 0)
             {
