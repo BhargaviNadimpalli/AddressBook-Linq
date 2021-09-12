@@ -85,6 +85,12 @@ namespace AddressBookLinq
 
             Console.WriteLine("Size : {0} ", contacts);
         }
+        public void SortContacts(DataTable table)
+        {
+            var contacts = table.Rows.Cast<DataRow>()
+                           .OrderBy(x => x.Field<string>("FirstName"));
+            DisplayDataTable(contacts.CopyToDataTable());
+        }
     }
 
 }
